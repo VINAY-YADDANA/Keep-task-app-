@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<h1>Task Details</h1>
+
+<table class="task_table">
+    <tr>
+        <th>ID</th>
+        <th>Task Name</th>
+        <th>Task Description</th>
+        <!-- <th>Delete Task</th> -->
+        <!-- <th>Update Task</th> -->
+        
+    </tr>
+    <tr>
+        <tr *ngFor="let data of taskdata">
+        <td>{{data.id}}</td>
+        <td>{{data.Tasktitle}}</td>
+        <td>{{data.Taskdesc}}</td>
+        <!-- <td><button mat-fab color="warn" (click)="Datadelete(data.id)">
+            <mat-icon>delete</mat-icon>
+          </button></td> -->
+        <!-- <td><button class="material-icons" type="submit" routerLink="/update">edit</button></td> -->
+        
+    </tr>
+</table>

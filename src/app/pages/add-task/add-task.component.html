@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+<form class="example-form" #TaskData="ngForm" (ngSubmit)="createTask(TaskData.value)">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Task Title</mat-label>
+      <input matInput placeholder="Ex. Eat..sleep..study" name="Tasktitle" ngModel required>
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Describe More</mat-label>
+      <input matInput placeholder="Ex. Should study at 9am..." name="Taskdesc" ngModel required >
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary" routerLink="" [disabled]="!TaskData.valid">
+        Add Task
+      </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="reset" mat-raised-button color="warn" (click)="TaskData.reset()">Reset</button>
+  </form>

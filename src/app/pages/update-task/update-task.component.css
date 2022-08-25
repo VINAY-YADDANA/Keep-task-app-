@@ -1,0 +1,26 @@
+
+.task_table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.task_table td, .task_table th{
+    border: 1px solid;
+    padding: 10px;
+    border-color: grey;
+    text-align: center;
+}
+.task_table tr:hover{
+    background-color: gray;
+}
+.task_table tr th{
+    background-color: black;
+    color: bisque;
+}
+
+h1{
+    text-align: center;
+    color: brown;
+    
+}
+

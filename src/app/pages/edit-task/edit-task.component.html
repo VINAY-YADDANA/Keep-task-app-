@@ -1,0 +1,47 @@
+<app-header></app-header>
+<h1>Edit Task</h1>
+<form class="example-form" [formGroup]="Edittaskform" (ngSubmit)="editDatafinal()">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Task Title</mat-label>
+      <input matInput placeholder="Ex. Eat..sleep..study" formControlName="Tasktitle">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Describe More</mat-label>
+      <input matInput placeholder="Ex. Should study at 9am..." formControlName="Taskdesc">
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary">
+        Conform Edit
+      </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      <button type="reset" mat-raised-button color="warn">Reset</button>
+  </form>
+
+
+
+
+
+<!-- <table class="task_table">
+    <tr>
+        <th>ID</th>
+        <th>Task Name</th>
+        <th>Task Description</th>
+        <!-- <th>Delete Task</th> -->
+        <!-- <th>Update Task</th> -->
+        
+    <!-- </tr>
+    <tr>
+        <tr *ngFor="let data of edittask">
+        <td>{{data.id}}</td>
+        <td>{{data.Tasktitle}}</td>
+        <td>{{data.Taskdesc}}</td>
+        <!-- <td><button mat-fab color="warn" (click)="D(data.id)">
+            <mat-icon>delete</mat-icon>
+          </button></td> -->
+        <!-- <td><a class="material-icons"  [routerLink]="['/edit', data.id]">edit</a></td> -->
+<!--         
+    </tr> -->
+<!-- </table> --> --> -->
